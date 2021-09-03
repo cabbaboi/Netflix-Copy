@@ -363,7 +363,7 @@ html, body {
 }
 
 .icon{
-    width: 20px;
+    width: 18px;
     position: relative;
 }
 
@@ -371,14 +371,14 @@ html, body {
     content: "";
     position: absolute;
     background: #fff;
-    width: 20px;
+    width: 18px;
     height: 3px;
-    top: -1.5px;
+    top: -1.3px;
+    transition: 0.5s linear;
 }
 
 .icon::after{
     transform: rotate(90deg);
-    transition: 0.5s linear;
 }
 
 .ans{
@@ -400,7 +400,11 @@ html, body {
 }
 
 .item:target .icon:after{
-    transform: rotatey(90deg);
+    transform: rotate(45deg);
+}
+
+.item:target .icon::before{
+    transform: rotate(-45deg);
 }
 
 /* end sections */
