@@ -84,6 +84,7 @@ html, body {
     top: 0;
     left: 0;
     object-fit: cover;
+    opacity: 0.5;
 }
 
 
